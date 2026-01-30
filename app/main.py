@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from api.v1.ocr.ocr_job_router import router as ocr_job_router
+from app.api.v1.ocr.ocr_job_router import router as ocr_job_router
 
 app = FastAPI()
 
