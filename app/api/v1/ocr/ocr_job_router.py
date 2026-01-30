@@ -35,6 +35,8 @@ async def receive_ocr_job(
 
     return OcrJobResponse(
         job_id=job.job_id,
+        row_id=row_id,
+        requirement_id=requirement_id,
         status=job.status,
         received_at=job.created_at,
     )
