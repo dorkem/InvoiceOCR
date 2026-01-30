@@ -3,7 +3,7 @@ from app.api.v1.ocr.ocr_job_router import router as ocr_job_router
 
 app = FastAPI()
 
-app.include_router(ocr_job_router, prefix="/api/v1")
+app.include_router(ocr_job_router)
 
 if __name__ == "__main__":
     import uvicorn

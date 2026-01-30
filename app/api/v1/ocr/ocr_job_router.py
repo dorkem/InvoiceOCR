@@ -1,6 +1,6 @@
-from domain.ocr_job import OcrJob
+from app.domain.ocr_job import OcrJob
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException
-from dto.ocr_job_response import OcrJobResponse
+from app.dto.ocr_job_response import OcrJobResponse
 
 router = APIRouter(prefix="/v1/ocr", tags=["OCR"])
 
